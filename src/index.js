@@ -10,18 +10,3 @@ root.render(
     <App />
   </ShopContextProvider>
 );
-
-// const newCartItems = [];
-// setCartItems((prev) => {
-//   prev.map((prevItems) => {
-//     if (prevItems.id !== itemId) {
-//       newCartItems.push(prevItems);
-//       return newCartItems;
-//     }
-//     console.log(newCartItems);
-//     return newCartItems;
-//   });
-// });
-// setCartItems((prevItems) => {
-//   console.log(prevItems);
-// });

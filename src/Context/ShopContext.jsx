@@ -8,16 +8,16 @@ const ShopContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     setCartItems((prev) => {
-      // Check if the product is already in the cart
+      // Checking  if the product is already in the cart
       const existingProductIndex = prev.findIndex((item) => item.id === itemId);
 
       if (existingProductIndex !== -1) {
-        // If product exists, update the quantity
+        // If product exists then update the quantity
         const updatedCartItems = [...prev];
         updatedCartItems[existingProductIndex].quantity += 1;
         return updatedCartItems;
       } else {
-        // If product doesn't exist, add it to the cart with quantity 1
+        // If product doesn't exist then add it to the cart with quantity 1
         return [
           ...prev,
           {
@@ -32,17 +32,17 @@ const ShopContextProvider = (props) => {
   console.log(cartItems);
   const removeFromCart = (itemId) => {
     setCartItems((prev) => {
-      // Find the index of the product in the cart
+      // Finding the index of the product in the cart
       const productIndex = prev.findIndex((item) => item.id === itemId);
 
       if (productIndex !== -1) {
         const updatedCartItems = [...prev];
 
-        // If quantity > 1, reduce the quantity
+        // If quantity > 1 then reduce the quantity
         if (updatedCartItems[productIndex].quantity > 1) {
           updatedCartItems[productIndex].quantity -= 1;
         } else {
-          // If quantity is 1, remove the item completely
+          // If quantity is 1  then remove the item completely
           updatedCartItems.splice(productIndex, 1);
         }
 
@@ -57,7 +57,6 @@ const ShopContextProvider = (props) => {
     return cartItems.reduce((total, item) => {
       const product = all_product.find((product) => product.id === item.id);
       if (product) {
-        // Multiply the price of the product by its quantity and add it to the total
         return total + product.new_price * item.quantity;
       }
       return total;
