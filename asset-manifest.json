@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shopperz/static/css/main.4b3013d8.css",
-    "main.js": "/Shopperz/static/js/main.f60c3749.js",
+    "main.js": "/Shopperz/static/js/main.64227916.js",
     "static/media/banner_kids.png": "/Shopperz/static/media/banner_kids.fff815a581793a7380fb.png",
     "static/media/banner_women.png": "/Shopperz/static/media/banner_women.5a27fc4e4533e57e4676.png",
     "static/media/banner_mens.png": "/Shopperz/static/media/banner_mens.eed7197157196f319b17.png",
@@ -46,10 +46,10 @@
     "static/media/hand_icon.png": "/Shopperz/static/media/hand_icon.9c7487cecb600f30901b.png",
     "index.html": "/Shopperz/index.html",
     "main.4b3013d8.css.map": "/Shopperz/static/css/main.4b3013d8.css.map",
-    "main.f60c3749.js.map": "/Shopperz/static/js/main.f60c3749.js.map"
+    "main.64227916.js.map": "/Shopperz/static/js/main.64227916.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3013d8.css",
-    "static/js/main.f60c3749.js"
+    "static/js/main.64227916.js"
   ]
 }
